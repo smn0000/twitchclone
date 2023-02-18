@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="h-full w-full font-roobert text-white bg-[#080809]">
       <Navbar/>
-      <div className='flex flex-nowrap h-full w-full mt-[2px]'>
+      <div className='flex flex-nowrap h-full w-full'>
         <Aside/>
         <Main/>
       </div>

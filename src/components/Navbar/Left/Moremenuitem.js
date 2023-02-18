@@ -1,6 +1,6 @@
 const Moremenuitem = ({text}) => {
   return (
-    <button className="text-sm font-normal text-left p-1 my-[1px] hover:bg-gray-600 rounded ">{text}</button>
+    <button className="text-sm font-normal text-left p-1 my-[1px] hover:bg-black-400 rounded ">{text}</button>
   )
 }
 

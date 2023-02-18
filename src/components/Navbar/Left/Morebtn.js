@@ -8,7 +8,7 @@ const Morebtn = () => {
 
   return (
     <div className="flex relative items-center justify-center ml-3">
-        <button className="flex items-center justify-center h-2/3 rounded aspect-square hover:bg-gray-700" onClick={() => setOpen(!open)}>
+        <button className="flex items-center justify-center h-2/3 rounded aspect-square hover:bg-black-500" onClick={() => setOpen(!open)}>
             <FaEllipsisV size='17px'/>
         </button>
         {open && <Moremenu/>}

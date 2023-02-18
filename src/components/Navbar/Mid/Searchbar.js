@@ -11,7 +11,7 @@ const [input, setInput] = useState('')
 } */
   return (
     <div className=" w-96 h-2 flex items-center">
-      <Input onInput={setInput} />
+      <Input setInput={setInput} />
       <button disabled={input == '' ? true : false} className="flex justify-center items-center bg-black-600 aspect-square h-9 ml-[1px] rounded-r-md disabled:cursor-not-allowed"  >
         <FaSearch size="20px"/>
       </button>

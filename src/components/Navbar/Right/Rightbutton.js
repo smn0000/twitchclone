@@ -1,14 +1,16 @@
-import { BiEnvelope , BiChat, BiCrown, BiSend}  from "react-icons/bi"
+import { BiEnvelope , BiChat, BiCrown}  from "react-icons/bi"
 
 
-const Rightbutton = () => {
+const Rightbutton = ({type}) => {
   return (
-    <>
-    <BiCrown size='30px'/>
-    <BiEnvelope size='30px' />
-    <BiChat size='30px'/>
-    <BiSend size='30px' className=" -rotate-90"/>
-    </>
+    <button className="flex h-2/3 ml-3 items-center justify-center rounded aspect-square hover:bg-black-500"> 
+        {type === 'prime' && <BiCrown size={'20px'}/>}
+        {type === 'notifications' && <BiEnvelope size={'20px'} />}
+        {type === 'whispers' && <BiChat size={'20px'} />} 
+    </button>
+     
+
+   
   )
 }
 

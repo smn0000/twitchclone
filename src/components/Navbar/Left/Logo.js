@@ -1,9 +1,9 @@
 import { FaTwitch } from 'react-icons/fa'
 
-const Logo = () => {
+const Logo = ({onClick}) => {
   return (
     <div className='flex items-center justify-center ml-1 mr-4'>
-        <button>
+        <button onClick={() => onClick(0)}>
             <FaTwitch size='25px' className='hover:text-violet-600'/>
         </button>
         

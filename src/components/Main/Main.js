@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <main className='w-full h-full bg-black-900'></main>
+    <main className='w-full bg-black-900 overflow-scroll'></main>
   )
 }
 

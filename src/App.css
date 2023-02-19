@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url('https://fonts.cdnfonts.com/css/roobert');
 
-html , #root{
+*{
+    margin:0;
+}
+
+#root{
     height: 100vh;
 }

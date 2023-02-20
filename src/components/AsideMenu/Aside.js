@@ -1,8 +1,10 @@
-import React from 'react'
+import Asideshort from "./Asideshort"
 
 const Aside = () => {
   return (
-    <aside className='bg-black-700 w-[17rem] overflow-scroll'></aside>
+    <aside className='bg-black-700'>
+      <Asideshort/>
+    </aside>
   )
 }
 

@@ -1,10 +1,12 @@
 import { BiArrowFromLeft , BiHeart } from "react-icons/bi";
+import Channelshort from "./Channelshort";
 
-const Asideshort = () => {
+const Asideshort = ({data, toggle}) => {
+
   return (
-    <div className='w-[3.2rem] h-full'>
+    <div className='w-[3.2rem] h-full overflow-scroll'>
         <div className="aspect-square flex items-center justify-center">
-            <button className="aspect-square hover:bg-black-400 flex items-center justify-center rounded-md">
+            <button className="aspect-square hover:bg-black-400 flex items-center justify-center rounded-md" onClick={()=> toggle()}>
                 <BiArrowFromLeft size='25px'/>
             </button>
         </div>
@@ -13,12 +15,7 @@ const Asideshort = () => {
                 <BiHeart size='18px'/>
         </div>
 
-        <div className="bg-white flex flex-col items-center align-middle">
-            <div className="bg-slate-200 w-full py-[5px] px-[10px] flex items-center align-middle">
-                <div className="h-[30px] aspect-square bg-black-400"></div>
-            </div>
-
-        </div>
+        {data.map((stream) => <Channelshort key={stream.id} name={stream.name} avatar={stream.avatar} category={stream.category} viewer={stream.viewer} title={stream.title}/>)}
 
 
     </div>

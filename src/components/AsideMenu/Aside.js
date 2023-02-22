@@ -22,7 +22,7 @@ const Aside = () => {
 
   return (
     <aside className='bg-black-700'>
-      {hidden ? <Asideshort data={isSorted ? sorted : unsorted} toggle={handleToggle}/> : <Asidelong data={isSorted ? sorted : unsorted} toggle={handleToggle} sort={handleSort} />}
+      {hidden ? <Asideshort data={isSorted ? sorted : unsorted} toggle={handleToggle}/> : <Asidelong data={isSorted ? sorted : unsorted} toggle={handleToggle} sort={handleSort} isSorted={isSorted}/>}
     </aside>
   )
 }

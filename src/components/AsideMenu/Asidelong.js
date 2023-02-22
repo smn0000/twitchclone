@@ -1,7 +1,7 @@
 import { BiArrowFromRight , BiSortAlt2 } from "react-icons/bi";
 import Channellong from "./Channellong";
 
-const Asidelong = ({data, toggle}) => {
+const Asidelong = ({data, toggle, sort}) => {
   return (
     <div className='w-60 h-full overflow-scroll'>
         <div className="flex content-center justify-between p-3 pb-0 text-xl font-bold">
@@ -17,7 +17,10 @@ const Asidelong = ({data, toggle}) => {
                 <p className="text-sm text-gray-400">Viewers (High to Low)</p>
 
             </div>
-            <BiSortAlt2 size='20px'/>
+            <button onClick={() => sort()}>
+                <BiSortAlt2 size='20px'/>
+            </button>
+           
         </div>
 
         {data.map((stream) => <Channellong key={stream.id} name={stream.name} avatar={stream.avatar} category={stream.category} viewer={stream.viewer} title={stream.title}/>)}

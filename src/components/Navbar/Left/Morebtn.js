@@ -1,18 +1,17 @@
 import { BiDotsVerticalRounded } from "react-icons/bi"
 import { useState } from "react"
-import Hint from "../../Hint"
 import Moremenu from "./Moremenu"
+import Iconbutton from "../../Iconbutton"
 
 const Morebtn = () => {
 
   const [open, setOpen] = useState(false)
+  let disableHint = false
+  open ? disableHint = true : disableHint = false
 
   return (
     <div className="flex relative items-center justify-center ml-3">
-        <button className="flex items-center justify-center h-2/3 rounded aspect-square hover:bg-black-500" onClick={() => setOpen(!open)}>
-            <BiDotsVerticalRounded size='25px'/>
-        </button>
-        <Hint text={"More"} position="bottom"/>
+        <Iconbutton icon="more" text="More" hintPosition={'bottom'} func={() => setOpen(!open)} disableHint={disableHint}/>
         {open && <Moremenu/>}
   
     </div>

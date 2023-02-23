@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 
 const Hint = ({position ,text}) => {
     let style = "fixed pointer-events-none"
@@ -27,7 +24,9 @@ const Hint = ({position ,text}) => {
             style += bottom
             break
         default:
-            console.error('Invalid position name');
+            notchStyle += notchRight
+            style += left
+            break
     }
     
   return (

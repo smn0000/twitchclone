@@ -1,8 +1,8 @@
-import { BiArrowFromRight , BiSortAlt2 } from "react-icons/bi";
+import { BiSortAlt2 } from "react-icons/bi";
 import { useState } from "react";
 import Sortmenu from "./Sortmenu";
 import Channellong from "./Channellong";
-import Hint from "../Hint";
+import Iconbutton from "../Iconbutton";
 
 
 const Asidelong = ({data, toggle, sort, isSorted}) => {
@@ -17,10 +17,7 @@ const Asidelong = ({data, toggle, sort, isSorted}) => {
     <div className='w-60 h-full overflow-y-scroll'>
         <div className="flex content-center justify-between p-3 pb-0 text-xl font-bold">
             <p>For You</p>
-            <button className="aspect-square hover:bg-black-400 flex items-center justify-center rounded-md relative" onClick={()=> toggle()}>
-                <BiArrowFromRight size='25px'/>
-                <Hint text={'Collapse'} position="right"/>
-            </button>
+            <Iconbutton icon='collapse' text="Collapse" func={() => toggle()}/>
         </div>
 
         <div className="relative">

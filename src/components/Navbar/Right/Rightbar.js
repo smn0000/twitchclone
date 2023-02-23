@@ -16,9 +16,9 @@ const handleToggle = (id) =>{
 
   return (
     <div className='flex justify-end items-center px-2 font-medium h-full text-sm'>
-      <Rightbutton type={'prime'} id={1} handleToggle={handleToggle} toggled={toggled} />
-      <Rightbutton type={'notifications'} id={2} handleToggle={handleToggle} toggled={toggled}/>
-      <Rightbutton type={'whispers'} id={3} handleToggle={handleToggle} toggled={toggled}/>
+      <Rightbutton type={'prime'} hintText={"New Prime Loot"} id={1} handleToggle={handleToggle} toggled={toggled} />
+      <Rightbutton type={'notifications'}  hintText={"Notifications"} id={2} handleToggle={handleToggle} toggled={toggled}/>
+      <Rightbutton type={'whispers'}  hintText={"Whispers"} id={3} handleToggle={handleToggle} toggled={toggled}/>
       <Bitsbutton id={4} handleToggle={handleToggle} toggled={toggled}/>
       <RightbarUser id={5} handleToggle={handleToggle} toggled={toggled}/>
     </div>

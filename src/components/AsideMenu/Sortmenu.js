@@ -18,7 +18,7 @@ const Sortmenu = ({isSorted, sort, setSortMenu}) => {
         <p className="text-gray-400 font-bold text-sm pb-2">SORT BY</p>
 
         <div className={!isSorted ?'bg-violet-600 rounded-md' : 'hover:bg-black-500 rounded-md'}>
-            <div className=" flex items-center px-2" onClick={() => handleSelect('recommend')}>
+            <div className=" flex items-center px-2 cursor-pointer" onClick={() => handleSelect('recommend')}>
                     <BiStar size='22px' className="mr-1"/>
                     <span className="py-1">Recommended For You</span>
                     {!isSorted && <BiCheck size='25px' className="w-1/5 ml-1" />}
@@ -26,7 +26,7 @@ const Sortmenu = ({isSorted, sort, setSortMenu}) => {
         </div>
         
         <div className={isSorted ?'bg-violet-600 rounded-md' : 'hover:bg-black-500 rounded-md'}>
-            <div className="flex items-center px-2" onClick={() => handleSelect('sort')}>
+            <div className="flex items-center px-2 cursor-pointer" onClick={() => handleSelect('sort')}>
                 <BiBarChart size='22px' className="mr-1"/>
                 <span className="py-1">Viewers (High to Low)</span>
                 {isSorted && <BiCheck size='25px' className="w-1/5 ml-1"/>}

@@ -34,14 +34,11 @@ const Iconbutton = ({icon, text = 'Text', func, hintPosition='right', size='25px
     const [hover, setHover] = useState(false)
 
     const handleMouseEnter = () =>{
-        setTimeout(() => {
-            setHover((curretValue => !curretValue))
-        }, 300);
-       
+            setHover(true) 
     }
 
     const handleMouseLeave = () =>{
-        setHover((curretValue => !curretValue))
+        setHover(false)
     }
 
     return (

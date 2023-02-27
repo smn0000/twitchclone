@@ -15,9 +15,21 @@ module.exports = {
           500 : '#3e3e40',
           400 : '#3c3c40'
         }
+      },
+      keyframes: {
+        appear: {
+          '0%' : {opacity: '0'},
+          '80%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
       }
-      
     },
+    animation: {
+      appear: 'appear 1000ms',
+      appear_hint: 'appear 200ms',
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

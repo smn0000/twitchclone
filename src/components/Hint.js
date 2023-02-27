@@ -1,6 +1,6 @@
 
 const Hint = ({position ,text}) => {
-    let style = "fixed pointer-events-none"
+    let style = "fixed pointer-events-none  animate-appear_hint"
     let left = " mr-28 " , right = " ml-28 " , top = " mb-16 ", bottom = " mt-16 "
 
     let notchStyle = "h-5 w-5 rounded-sm rotate-45 bg-white absolute -z-10 "
@@ -28,15 +28,16 @@ const Hint = ({position ,text}) => {
             style += left
             break
     }
-    
-  return (
-    <div className={style}>
 
-        <div className={notchStyle}></div>
-        <div className='bg-white w-full h-full rounded-md text-black-900 text-sm font-semibold p-1'>
-            {text}
+
+  return (
+        <div className={style}>
+
+            <div className={notchStyle}/>
+            <div className='bg-white w-full h-full rounded-md text-black-900 text-sm font-semibold p-1'>
+                 {text}
+            </div>
         </div>
-    </div>
   )
 }
 

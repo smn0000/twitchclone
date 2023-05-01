@@ -14,7 +14,7 @@ const Asidelong = ({data, toggle, sort, isSorted}) => {
     }
 
   return (
-    <div className='w-60 h-full overflow-y-scroll'>
+    <div className='w-60 h-full overflow-y-scroll scrollbar-thin scrollbar-thumb-black-400'>
         <div className="flex content-center justify-between p-3 pb-0 text-xl font-bold">
             <p>For You</p>
             <Iconbutton icon='collapse' text="Collapse" func={() => toggle()}/>

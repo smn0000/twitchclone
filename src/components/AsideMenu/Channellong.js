@@ -17,7 +17,7 @@ const Channellong = ({type ,name, avatar, category, viewer, title}) => {
     }
 
   return (  
-    <a className=" flex items-center w-full hover:bg-black-600 py-[1px] cursor-pointer select-none static" href='#' onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>
+    <div className=" flex items-center w-full hover:bg-black-600 py-[1px] cursor-pointer select-none static" onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>
      
          <div className=" w-[50px] h-[40px] py-[45x] px-[10px] flex items-center align-middle">
              <div className="h-[30px] w-[30px]"><img src={avatar} className='rounded-full bg-red-400' alt=""/></div>
@@ -38,7 +38,7 @@ const Channellong = ({type ,name, avatar, category, viewer, title}) => {
        
        {hover && <Streaminfo/>}
 
-    </a>
+    </div>
 
 
 

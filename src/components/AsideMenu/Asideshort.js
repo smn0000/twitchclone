@@ -1,4 +1,4 @@
-import { BiArrowFromLeft , BiHeart } from "react-icons/bi";
+import { BiHeart } from "react-icons/bi";
 import Channelshort from "./Channelshort";
 import Iconbutton from "../Iconbutton";
 
